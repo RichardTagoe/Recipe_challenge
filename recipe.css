@@ -1,0 +1,312 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  /*border: 1px solid red;*/ 
+}
+
+h1.name_of_recipe {
+  display: inline-block;  
+  padding: 10px 40px;
+  font-family: "Young Serif";
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 35px;
+  color: hsl(24, 5%, 18%);
+  /*border: 1px solid red;*/
+}
+
+.summary {
+  margin: 10px 43px 40px;
+  padding: 0px;
+  /*border: 1px solid yellow;*/
+  font-family: 'Outfit',sans-serif;
+  text-align: left;
+  font-weight: 400px;
+  font-size: 20px;
+  line-height: 30px;
+  color: hsl(30, 10%, 34%);
+}
+
+.prep-time-and-steps {
+  margin: 0px 40px;
+  border-radius: 10px;
+  /*border: 1px solid rgb(0, 0, 0);*/
+  box-shadow: 10px 10px 10px hsl(330, 100%, 98%);
+  background-color: hsl(330, 100%, 98%);
+}
+
+.preparing {
+  margin: 20px;
+  padding-left: 20px;
+  font-family: 'Outfit';
+  font-weight: 400px;
+  font-size: 20px;
+  color: hsl(332, 51%, 32%);
+}
+
+.steps {
+  padding-left: 80px;
+  font-family: 'Outfit',sans-serif;
+  line-height: 20px;
+  list-style-position: outside;
+}
+
+.steps li {
+  padding-left: 20px;
+}
+
+.total,.preparation,.cooking {
+  font-weight: bold;
+  font-family: 'Outfit',sans-serif;
+}
+
+.ingredients {
+  margin: 50px 40px 10px;
+  font-family: 'Young Serif';
+  font-weight: 400;
+  font-size: 35px;
+  color: hsl(14, 45%, 36%);
+}
+
+.materials_needed {
+  margin-top: 0;
+  padding-left: 70px;
+  list-style-position: outside;
+}
+
+.materials_needed li {
+  padding-left: 20px;
+  font-family: 'Outfit';
+  line-height: 40px;
+}
+
+.procedure {
+  margin: 30px 40px 10px;
+  font-family: 'Young Serif';
+  font-weight: 400;
+  font-size: 36px;
+  color: hsl(14, 45%, 36%);
+}
+
+ol {
+  margin: 0 30px;
+  padding-left: 35px;
+  /*border: 1px solid purple;*/
+  font-family: 'Outfit';
+  font-size: 16px;
+  line-height: 25px;
+}
+
+ol li {
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+
+.nutrients {
+  margin: 15px 40px 30px;
+  /*border: 1px solid indigo;*/
+}
+
+.nutrition {
+  margin: 30px 40px 10px;
+  font-family: 'Young Serif';
+  font-weight: 400;
+  font-size: 36px;
+  color: hsl(14, 45%, 36%);
+}
+
+p.nutritional-values {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Outfit';
+  /*border: 1px solid blue;*/
+}
+
+p.nutri-val {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  font-family: 'Outfit';
+}
+
+span.val {
+  margin-right: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Outfit';
+  color: hsl(14, 45%, 36%); 
+  font-weight: bolder;
+}
+
+
+@media  (min-width: 750px) {
+  body {
+    margin: 50px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: hsl(330, 100%, 98%);;
+}
+
+ img {
+  width: 100%;
+  margin: 0;
+  border-radius: 10px;
+ }
+
+ .name_of_recipe .line-break {
+  display: none;
+ }
+
+ h1.name_of_recipe {
+  padding-left: 50px;
+  font-size: 47px;
+ }
+
+ .summary {
+  font-size: 27px;
+  line-height: 35px;
+ }
+
+ .preparing {
+  font-size: 35px;
+ }
+
+ ul li {
+  font-size: 30px;
+  padding-bottom: 40px;
+  line-height: 30px;
+
+ }
+
+ .ingredients, .procedure, .nutrition {
+  font-size: 60px; 
+ }
+
+ .materials_needed {
+  margin: 20px;
+ }
+
+ ol {
+  margin: 30px 55px;
+  font-size: 30px;
+  line-height: 45px;
+ }
+
+ p.nutritional-values {
+  font-size: 30px;
+ }
+}
+
+@media (min-width: 1440px) {
+  * {
+    background-color: hsl(330, 100%, 98%);
+  }
+
+  body {
+    margin: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffffff;
+    border-radius: 70px;
+    background-color: white;
+  }
+
+  .image-container {
+    background-color: white;
+    padding: 30px;    
+    margin: 40px 40px 0;   
+    display: inline-block; 
+  }
+  
+  .image-container img {
+    width: 100%;     /* Image will take up 100% of its container's width */
+    display: block;  /* Remove inline spacing */
+    border-radius: 20px;
+  }
+
+  h1.name_of_recipe {
+    padding-left: 70px;
+    background-color: white;
+    font-size: 65px;
+  }
+
+  .summary {
+    padding-left: 30px;
+    font-size: 40px;
+    line-height: 55px;
+    background-color: white;
+  }
+
+  .prep-time-and-steps {
+    margin: 30px 60px;
+    padding: 30px;
+  }
+
+  .preparing {
+    font-size: 50px;
+  }
+
+  ul li {
+    font-size: 45px;
+    line-height: 40px;
+  }
+
+  .ingredients, .procedure, .nutrition {
+    font-size: 80px;
+    background-color: white;
+    padding: 20px;
+  }
+
+  .materials_needed {
+    margin: 0 60px 40px;
+    background-color: white;
+  }
+  .materials_needed li {
+    background-color: white;
+  }
+
+  ol {
+    margin: 50px 90px;
+    font-size: 40px;
+    line-height: 60px;
+    background-color: white;
+  }
+  ol li {
+    background-color: white;
+  }
+
+  .nutrients {
+    margin: 0 65px;
+    background-color: white;
+  }
+
+  p.nutritional-values, p.nutri-val {
+    font-size: 45px;
+    background-color: white;
+  }
+}
+
+@media (min-width: 2560px) {
+  .image-container {
+    width: 95%;
+  }
+}
